@@ -1,6 +1,7 @@
 package com.aas.the_hungry_developer_resturant_3;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
@@ -37,8 +38,10 @@ public class StartersActivity extends AppCompatActivity {
                 "Chickpea and cabbage parcels",
                 "Coriander and peppercorn gyoza",
                 "Pear and chestnut soup",
-                "Pesto and garam masala parcels"};
+                "Pesto and garam masala parcels"
+        };
 
+        ArrayAdapter<String>dishesAdapter = new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,dishes);
 
     }
 }
