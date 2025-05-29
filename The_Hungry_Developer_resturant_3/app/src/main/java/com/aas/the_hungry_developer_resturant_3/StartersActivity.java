@@ -20,7 +20,7 @@ public class StartersActivity extends AppCompatActivity {
         ListView starterList = findViewById(R.id.list_view_starters);
 
 
-        Dish[] dishes = {
+        Dish[] starters = {
                 new Dish("Mushroom and tofu maki", "A delicious combination of mushrooms and tofu wrapped in sushi rice and seaweed.", 999),
                 new Dish("Egg and avocado uramaki", "A delightful uramaki roll filled with creamy avocado and soft-boiled egg.", 899),
                 new Dish("Melon and lemon soup", "A refreshing soup made with sweet melon and zesty lemon.", 799),
@@ -43,7 +43,7 @@ public class StartersActivity extends AppCompatActivity {
 
 
 
-        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, dishes);
+        ArrayAdapter<Dish> dishesAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, starters);
         starterList.setAdapter(dishesAdapter);
     }
 }

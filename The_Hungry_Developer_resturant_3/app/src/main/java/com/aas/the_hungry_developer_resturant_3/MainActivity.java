@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     CardView startersCArd;
     CardView mainsCard;
+    CardView dessertsCard;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
 
         startersCArd = findViewById(R.id.card_view_starters);
         mainsCard = findViewById(R.id.card_view_mains);
+        dessertsCard = findViewById(R.id.card_view_desserts);
 
         startersCArd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,6 +49,16 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+
+        dessertsCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent dessertsActivityIntent = new Intent(MainActivity.this, DessertsActivity.class);
+
+                startActivity(dessertsActivityIntent);
+            }
+        });
+
 
         TextView emailTextView = findViewById(R.id.text_view_email_address);
         emailTextView.setOnClickListener(new View.OnClickListener() {

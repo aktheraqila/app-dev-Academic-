@@ -10,7 +10,7 @@
         android:id="@+id/main"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="25dp"
+        android:padding="10dp"
         tools:context=".MainActivity">
 
         <TextView
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="20dp"
             android:fontFamily="cursive"
             android:text="The Hungry Developer"
             android:textStyle="bold"
@@ -32,7 +32,7 @@
             android:layout_below="@id/text_view_resturant_name"
             android:layout_centerHorizontal="true"
             android:fontFamily="sans-serif-medium"
-            android:padding="25dp"
+            android:padding="15dp"
             android:textColor="#1B1B1B"
             android:text="thehungrydeveloper@aqilaakther.com" />
 
@@ -44,7 +44,7 @@
             android:layout_below="@id/text_view_email_address"
             android:layout_centerHorizontal="true"
             android:background="#B8B7B7"
-            android:layout_margin="30dp">
+            android:layout_margin="10dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -79,7 +79,7 @@
             android:layout_below="@id/card_view_starters"
             android:layout_centerHorizontal="true"
             android:background="#B8B7B7"
-            android:layout_margin="20dp">
+            android:layout_margin="10dp">
 
 
             <LinearLayout
@@ -107,6 +107,40 @@
             </LinearLayout>
         </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view_desserts"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/card_view_mains"
+            android:layout_centerHorizontal="true"
+            android:background="#B8B7B7"
+            android:layout_margin="10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/chocolate_cake" />
+
+                <TextView
+                    android:id="@+id/text_view_desserts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:fontFamily="sans-serif-medium"
+                    android:text="Desserts"
+                    android:textSize="15sp" />
+
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
 
