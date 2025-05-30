@@ -1,12 +1,15 @@
 package com.aas.aasportfolioprojects_4;
 
 import android.os.Bundle;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.RecyclerView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+        RecyclerView list = findViewById(R.id.recycler_view_projects);
+
 
         Project[] projects = {
                 new Project("Getting Started", "Our very first project, the default 'Hello world' project", R.drawable.getting_started),
@@ -23,6 +28,8 @@ public class MainActivity extends AppCompatActivity {
                 new Project("Simply Calculate", "Simple converter, converts inches to meters", R.drawable.tape),
                 new Project("The Hungry Developer", "A menu app for fictional restaurant, startes, main courses and desserts", R.drawable.hungry_developer)
         };
+
+
 
     }
 }
