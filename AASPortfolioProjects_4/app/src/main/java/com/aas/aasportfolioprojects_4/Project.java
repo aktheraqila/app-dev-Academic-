@@ -6,6 +6,7 @@ public class Project {
     String description;
     int image;
 
+    // Constructor to initialize the Project object
     public Project(String name, String description, int image) {
         this.name = name;
         this.description = description;
