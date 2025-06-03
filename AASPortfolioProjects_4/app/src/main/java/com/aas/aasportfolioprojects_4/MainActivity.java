@@ -21,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView list = findViewById(R.id.recycler_view_projects);
 
 
-                // Create an array of Project objects
+
         Project[] projects = {
                 new Project("Getting Started", "Our very first project, the default 'Hello world' project", R.drawable.getting_started),
                 new Project("AAS Quote", "Simple quote project, personal motivational quote for software developers", R.drawable.quote),

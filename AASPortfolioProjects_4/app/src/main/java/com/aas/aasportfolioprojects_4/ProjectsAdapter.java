@@ -18,13 +18,13 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
     }
 
     @Override
-    //This is where we bind the data to the view holder
+
     public void onBindViewHolder(@NonNull ProjectViewHolder holder, int position) {
 
     }
 
     @Override
-    //This is where we get the size of the list
+
     public int getItemCount() {
         return 0;
     }
