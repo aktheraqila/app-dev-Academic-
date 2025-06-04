@@ -27,7 +27,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_project_title"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="12dp"
             android:layout_toEndOf="@id/image_view_project_icon"
             android:text="This is the description of our project" />
 
