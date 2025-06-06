@@ -8,7 +8,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.ProjectViewHolder> {
 
+    private Project[] projects;
 
+    public ProjectsAdapter(Project[] projects) {
+        this.projects = projects;
+    }
+
+    @Override
+
+    public int getItemCount() {
+        return projects.length;
+    }
 
     @NonNull
     @Override
@@ -23,11 +33,6 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
 
     }
 
-    @Override
-
-    public int getItemCount() {
-        return 0;
-    }
 
     static class ProjectViewHolder extends RecyclerView.ViewHolder{
 
