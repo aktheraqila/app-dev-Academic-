@@ -1,5 +1,6 @@
 package com.aas.aasportfolioprojects_4;
 
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
@@ -24,7 +25,8 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
     @Override
     //This is where we create the view holder
     public ProjectViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return null;
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_project,parent,false);
+        return new ProjectViewHolder(view);
     }
 
     @Override
