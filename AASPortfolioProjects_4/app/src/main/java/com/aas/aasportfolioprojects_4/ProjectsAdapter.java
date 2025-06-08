@@ -40,9 +40,9 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.Projec
 
     static class ProjectViewHolder extends RecyclerView.ViewHolder{
 
-        ImageView appImage;
-        TextView appTitle;
-        TextView appDescription;
+        private ImageView appImage;
+        private TextView appTitle;
+        private TextView appDescription;
         public ProjectViewHolder(@NonNull View itemView) {
             super(itemView);
             appImage = itemView.findViewById(R.id.image_view_project_icon);
