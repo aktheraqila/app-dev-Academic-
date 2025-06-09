@@ -30,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
                 new Project("The Hungry Developer", "A menu app for fictional restaurant, startes, main courses and desserts", R.drawable.hungry_developer)
         };
 
+        ProjectsAdapter adapter = new ProjectsAdapter(projects);
+        list.setAdapter(adapter);
 
 
     }
