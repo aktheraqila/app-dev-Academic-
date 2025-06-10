@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 new Project("The Hungry Developer", "A menu app for fictional restaurant, startes, main courses and desserts", R.drawable.hungry_developer)
         };
 
+        // Create an instance of ProjectsAdapter and set it to the RecyclerView
         ProjectsAdapter adapter = new ProjectsAdapter(projects);
         list.setAdapter(adapter);
 
