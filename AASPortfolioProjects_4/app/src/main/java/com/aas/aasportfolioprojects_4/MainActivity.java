@@ -22,7 +22,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-              // Create an array of Project objects
         Project[] projects = {
                 new Project("Getting Started", "Our very first project, the default 'Hello world' project", R.drawable.getting_started),
                 new Project("AAS Quote", "Simple quote project, personal motivational quote for software developers", R.drawable.quote),
@@ -31,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
                 new Project("The Hungry Developer", "A menu app for fictional restaurant, startes, main courses and desserts", R.drawable.hungry_developer)
         };
 
-        // Create an instance of ProjectsAdapter and set it to the RecyclerView
         ProjectsAdapter adapter = new ProjectsAdapter(projects);
         list.setAdapter(adapter);
 
