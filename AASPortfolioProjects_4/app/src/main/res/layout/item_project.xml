@@ -16,7 +16,7 @@
             android:id="@+id/card_view_project_icon_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="15dp">
+            android:layout_margin="16dp">
 
             <ImageView
                 android:id="@+id/image_view_project_icon"
