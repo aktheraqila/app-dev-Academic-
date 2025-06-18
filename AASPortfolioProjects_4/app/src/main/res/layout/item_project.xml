@@ -34,7 +34,9 @@
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/card_view_project_icon_container"
             android:layout_toEndOf="@id/card_view_project_icon_container"
+            android:fontFamily="sans-serif-medium"
             android:text="The App Title"
+            android:textColor="#221044"
             android:textStyle="bold" />
 
         <TextView
