@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="15dp"
+    android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp">
 
@@ -16,7 +16,7 @@
             android:id="@+id/card_view_project_icon_container"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="10dp">
 
             <ImageView
                 android:id="@+id/image_view_project_icon"
@@ -36,6 +36,7 @@
             android:layout_toEndOf="@id/card_view_project_icon_container"
             android:fontFamily="sans-serif-medium"
             android:text="The App Title"
+            android:textSize="15sp"
             android:textColor="#221044"
             android:textStyle="bold" />
 
@@ -45,6 +46,9 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_project_title"
             android:layout_marginTop="12dp"
+            android:fontFamily="sans-serif-light"
+            android:textColor="#101010"
+            android:textSize="12sp"
             android:layout_toEndOf="@id/card_view_project_icon_container"
             android:text="This is the description of our project" />
 
