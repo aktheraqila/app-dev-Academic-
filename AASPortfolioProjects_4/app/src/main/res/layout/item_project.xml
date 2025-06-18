@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_margin="8dp"
     app:cardCornerRadius="8dp"
     app:cardElevation="5dp">
@@ -23,7 +24,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/quote" />
+                tools:src="@drawable/quote" />
 
         </androidx.cardview.widget.CardView>
 
@@ -35,9 +36,9 @@
             android:layout_alignTop="@id/card_view_project_icon_container"
             android:layout_toEndOf="@id/card_view_project_icon_container"
             android:fontFamily="sans-serif-medium"
-            android:text="The App Title"
-            android:textSize="15sp"
+            tools:text="The App Title"
             android:textColor="#221044"
+            android:textSize="15sp"
             android:textStyle="bold" />
 
         <TextView
@@ -46,11 +47,11 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/text_view_project_title"
             android:layout_marginTop="12dp"
-            android:fontFamily="sans-serif-light"
-            android:textColor="#101010"
-            android:textSize="12sp"
             android:layout_toEndOf="@id/card_view_project_icon_container"
-            android:text="This is the description of our project" />
+            android:fontFamily="sans-serif-light"
+            tools:text="This is the description of our project"
+            android:textColor="#101010"
+            android:textSize="12sp" />
 
     </RelativeLayout>
 
