@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="144dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="15dp"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/text_view_heading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:layout_toStartOf="@+id/card_view_image_container"
+        tools:text="1. Item heading."/>
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/text_view_description"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_view_heading"
+        tools:text="This will be a description. This is gonna be a huge description for the better view of textview description"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_image_container"
+        android:layout_width="160dp"
+        android:layout_alignParentEnd="true"
+        app:cardCornerRadius="18dp"
+        android:layout_marginStart="12dp"
+        android:layout_height="match_parent">
+        
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/skydive"/>
+    </androidx.cardview.widget.CardView>
+    
+</RelativeLayout>
