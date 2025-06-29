@@ -1,42 +1,56 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="145dp"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="14dp"
-    android:background="@android:color/white">
+    android:background="@android:color/white"
+    android:padding="14dp">
 
     <TextView
         android:id="@+id/text_view_heading"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:fontFamily="sans-serif"
         android:layout_toStartOf="@+id/card_view_image_container"
-        tools:text="1. Item heading."/>
+        android:fontFamily="sans-serif"
+        android:textColor="#272727"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="1. Item heading." />
 
     <TextView
-        android:layout_marginTop="8dp"
         android:id="@+id/text_view_description"
         android:layout_width="220dp"
         android:layout_height="wrap_content"
         android:layout_below="@id/text_view_heading"
-        tools:text="This will be a description. This is gonna be a huge description for the better view of textview description."/>
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:textColor="#888888"
+        android:textSize="15sp"
+        tools:text="This will be a description. This is gonna be a huge description for the better view of textview description." />
+
+    <RatingBar
+        android:id="@+id/rating_bar"
+        style="@style/Widget.AppCompat.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/card_view_image_container"
+        android:rating="3.5f" />
 
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_image_container"
         android:layout_width="170dp"
+        android:layout_height="match_parent"
         android:layout_alignParentEnd="true"
-        app:cardCornerRadius="18dp"
         android:layout_marginStart="12dp"
-        android:layout_height="match_parent">
-        
+        app:cardCornerRadius="18dp">
+
         <ImageView
+            android:id="@+id/image_view_item_picture"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:scaleType="centerCrop"
-            tools:src="@drawable/skydive"/>
+            tools:src="@drawable/skydive" />
     </androidx.cardview.widget.CardView>
-    
+
 </RelativeLayout>
