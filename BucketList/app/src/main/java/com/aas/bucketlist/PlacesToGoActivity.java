@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 public class PlacesToGoActivity extends AppCompatActivity {
@@ -25,5 +26,9 @@ public class PlacesToGoActivity extends AppCompatActivity {
                 new BucketListEntry("The amazzon, Brazil", "Try to survive being scared by all the creepy crawlies!", R.drawable.amazon,3.8f)
 
         };
+
+        RecyclerView recyclerView = findViewById(R.id. recycler_view__places_to_go);
+        BucketListEntryAdapter adapter = new BucketListEntryAdapter(placesToGo);
+        recyclerView.setAdapter(adapter);
     }
 }

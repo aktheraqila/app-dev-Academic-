@@ -3,6 +3,7 @@ package com.aas.bucketlist;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 
 public class ThingsToDoActivity extends AppCompatActivity {
@@ -24,5 +25,9 @@ public class ThingsToDoActivity extends AppCompatActivity {
                 new BucketListEntry("Skydive", "Preferbly over somewhere with an amazing view", R.drawable.skydive,4.8f)
 
         };
+
+        RecyclerView recyclerView = findViewById(R.id. recycler_view__things_to_do);
+        BucketListEntryAdapter adapter = new BucketListEntryAdapter(thingstoDo);
+        recyclerView.setAdapter(adapter);
     }
 }
