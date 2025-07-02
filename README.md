@@ -8,11 +8,11 @@ Welcome to **Academic App Dev** — a collection of simple Android projects I’
 
 ### 📘 Beginner Projects (Java)
 
-#### 1. **AAS Portfolio Projects 4**
+#### 1. **AAS Portfolio Projects**
 A portfolio-style app listing my Android apps.  
 **Practiced:** RecyclerView, custom adapters, layout files, and CardView usage.
 
-#### 2. **BMI Calculator 1**
+#### 2. **BMI Calculator**
 Calculates Body Mass Index using user input.  
 **Practiced:** Input fields, button handling, mathematical calculations in Java.
 
