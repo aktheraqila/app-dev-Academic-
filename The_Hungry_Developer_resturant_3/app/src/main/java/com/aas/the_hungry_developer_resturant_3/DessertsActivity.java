@@ -39,6 +39,7 @@ public class DessertsActivity extends AppCompatActivity {
                 new Dish("Peach cobbler", "Warm peach cobbler served with vanilla ice cream", 899),
                 new Dish("Chocolate mousse", "Rich and creamy chocolate mousse topped with whipped cream", 999),
                 new Dish("Almond biscotti", "Crispy almond biscotti perfect for dipping in coffee", 699),
+                new Dish("Crème Brûlée", "Classic French dessert with a caramelized sugar crust", 1199),
                 new Dish("Lemon meringue pie", "Tangy lemon filling topped with fluffy meringue", 1099)
         };
 
