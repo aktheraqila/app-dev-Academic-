@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
     private fun onPReviewClicked() {
         val contactNameEditText: TextInputEditText = findViewById(R.id.edit_text_contact_name);
         val contactNumberEditText: TextInputEditText = findViewById(R.id.edit_text_contact_number);
-        val testString = contactNumberEditText.text.toString() + ", " + contactNameEditText.text.toString()
+        val testString = contactNameEditText.text.toString() + ": " + contactNumberEditText.text.toString()
         Toast.makeText(this, testString, Toast.LENGTH_LONG ).show()
     }
 }
