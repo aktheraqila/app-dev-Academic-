@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onPReviewClicked() {
+        // This is where you would handle the preview button click
         val contactNameEditText: TextInputEditText = findViewById(R.id.edit_text_contact_name);
         val contactNumberEditText: TextInputEditText = findViewById(R.id.edit_text_contact_number);
         val testString = contactNameEditText.text.toString() + ": " + contactNumberEditText.text.toString()
