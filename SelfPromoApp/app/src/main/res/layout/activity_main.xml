@@ -52,7 +52,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="8dp"
-            android:hint="My display Name">
+            android:hint="My Display Name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/edit_text_my_display_name"
@@ -61,7 +61,7 @@
                 android:layout_marginTop="8dp"
                 android:inputType="textCapWords"
                 android:textColor="@color/black"
-                tools:text="Aqila Akther" />
+                tools:text="Aqila" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
