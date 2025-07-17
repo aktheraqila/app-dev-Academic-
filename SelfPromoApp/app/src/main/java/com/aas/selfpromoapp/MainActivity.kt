@@ -14,6 +14,7 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
+        // Set up the button to handle click events
         val previewButton: Button = findViewById(R.id.button_preview)
         previewButton.setOnClickListener {
 
