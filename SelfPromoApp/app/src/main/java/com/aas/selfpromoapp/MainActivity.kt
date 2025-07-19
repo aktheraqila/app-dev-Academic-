@@ -24,6 +24,13 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
         contactNameEditText = findViewById(R.id.edit_text_contact_name)
+        contactNumberEditText = findViewById(R.id.edit_text_contact_number)
+        myDisplayNameEditText = findViewById(R.id.edit_text_my_display_name)
+        startDateEditText = findViewById(R.id.edit_text_start_date)
+        juniorCheckBox = findViewById(R.id.check_box_junior)
+        immediateStartCheckbox = findViewById(R.id.check_box_immediate_start)
+        jobTitleSpinner = findViewById(R.id.spinner_job_title)
+
         val previewButton: Button = findViewById(R.id.button_preview)
         previewButton.setOnClickListener {
 
