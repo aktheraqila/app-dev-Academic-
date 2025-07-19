@@ -10,11 +10,12 @@ import com.google.android.material.textfield.TextInputEditText
 
 class MainActivity : AppCompatActivity() {
 
+    private var contactNameEditText: TextInputEditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(activity_main)
-        // Set up the button to handle click events
+        contactNameEditText = findViewById(R.id.edit_text_contact_name)
         val previewButton: Button = findViewById(R.id.button_preview)
         previewButton.setOnClickListener {
 
@@ -25,9 +26,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPReviewClicked() {
 
-        val contactNameEditText: TextInputEditText = findViewById(R.id.edit_text_contact_name);
-        val contactNumberEditText: TextInputEditText = findViewById(R.id.edit_text_contact_number);
-        val testString = contactNameEditText.text.toString() + ": " + contactNumberEditText.text.toString()
-        Toast.makeText(this, testString, Toast.LENGTH_LONG ).show()
+//        val contactNameEditText: TextInputEditText = findViewById(R.id.edit_text_contact_name);
+//        val contactNumberEditText: TextInputEditText = findViewById(R.id.edit_text_contact_number);
+//        val testString = contactNameEditText.text.toString() + ": " + contactNumberEditText.text.toString()
+//        Toast.makeText(this, testString, Toast.LENGTH_LONG ).show()
     }
 }
