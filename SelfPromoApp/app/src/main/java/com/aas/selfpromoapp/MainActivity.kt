@@ -6,7 +6,6 @@ import android.widget.CheckBox
 import android.widget.Spinner
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.aas.selfpromoapp.R.layout.activity_main
 import com.google.android.material.textfield.TextInputEditText
 
 
@@ -22,7 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(activity_main)
+        setContentView(R.layout.activity_main)
         contactNameEditText = findViewById(R.id.edit_text_contact_name)
         contactNumberEditText = findViewById(R.id.edit_text_contact_number)
         myDisplayNameEditText = findViewById(R.id.edit_text_my_display_name)
