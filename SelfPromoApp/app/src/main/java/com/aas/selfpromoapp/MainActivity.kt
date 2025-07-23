@@ -26,5 +26,8 @@ class MainActivity : AppCompatActivity() {
         val includeJunior = binding.checkBoxJunior.isChecked
         val jobDescription = binding.spinnerJobTitle.selectedItem?.toString()
         val startDate = binding.editTextStartDate.text.toString()
+
+        Toast.makeText(this, "",Toast.LENGTH_LONG).show()
+
     }
 }
