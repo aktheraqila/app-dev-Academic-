@@ -20,8 +20,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onPreviewClicked() {
-        val testString = binding.editTextContactName.text.toString() + ": " +
-                binding.editTextContactNumber.text.toString()
-        Toast.makeText(this, testString, Toast.LENGTH_LONG).show()
+        val contactName = binding.editTextContactName.text.toString()
+        val contactNumber = binding.editTextContactNumber.text.toString()
+        val displayName = binding.editTextMyDisplayName.text.toString()
+        val includeJunior = binding.checkBoxJunior.isChecked
+        val jobDescription = binding.spinnerJobTitle.selectedItem?.toString()
+        val startDate = binding.editTextStartDate.text.toString()
     }
 }
