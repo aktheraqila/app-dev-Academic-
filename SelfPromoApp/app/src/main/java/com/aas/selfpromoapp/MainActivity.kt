@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
         val startDate = binding.editTextStartDate.text.toString()
 
         Toast.makeText(this, "",Toast.LENGTH_LONG).show()
+        val testString = "Hardcoded values here ${contactName}Some more values $contactNumber"
 
     }
 }
