@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onPreviewClicked() {
-        // Retrieve values from the UI components
+
         val contactName = binding.editTextContactName.text.toString()
         val contactNumber = binding.editTextContactNumber.text.toString()
         val displayName = binding.editTextMyDisplayName.text.toString()
