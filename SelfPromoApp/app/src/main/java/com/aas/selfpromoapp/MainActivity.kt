@@ -21,15 +21,18 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
-        val contactName = binding.editTextContactName.text.toString()
-        val contactNumber = binding.editTextContactNumber.text.toString()
-        val displayName = binding.editTextMyDisplayName.text.toString()
-        val includeJunior = binding.checkBoxJunior.isChecked
-        val jobDescription = binding.spinnerJobTitle.selectedItem?.toString()
-        val startDate = binding.editTextStartDate.text.toString()
+        private fun onPreviewClicked() {
+            val contactName = binding.editTextContactName.text.toString()
+            val contactNumber = binding.editTextContactNumber.text.toString()
+            val displayName = binding.editTextMyDisplayName.text.toString()
+            val includeJunior = binding.checkBoxJunior.isChecked
+            val jobTitle = binding.spinnerJobTitle.selectedItem?.toString()
+            val immediateStart = binding.checkBoxImmediateStart.isChecked
+            val startDate = binding.editTextStartDate.text.toString()
 
-        Toast.makeText(this, "",Toast.LENGTH_LONG).show()
-        val testString = "Hardcoded values here ${contactName}Some more values $contactNumber"
+            val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $displayName, Include Junior: $includeJunior, Job Title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
+            Toast.makeText(this, testString, Toast.LENGTH_LONG).show()
+        }
 
     }
 }
