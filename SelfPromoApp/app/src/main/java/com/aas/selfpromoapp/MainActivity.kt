@@ -21,8 +21,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
-        private fun onPreviewClicked() {
-            val contactName = binding.editTextContactName.text.toString()
+        val contactName = binding.editTextContactName.text.toString()
             val contactNumber = binding.editTextContactNumber.text.toString()
             val displayName = binding.editTextMyDisplayName.text.toString()
             val includeJunior = binding.checkBoxJunior.isChecked
@@ -35,4 +34,3 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
-}
