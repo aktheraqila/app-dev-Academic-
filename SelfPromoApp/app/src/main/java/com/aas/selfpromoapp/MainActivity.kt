@@ -21,7 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
-        val contactName = binding.editTextContactName.text.toString()
+        // Collect data from the input fields
+            val contactName = binding.editTextContactName.text.toString()
             val contactNumber = binding.editTextContactNumber.text.toString()
             val displayName = binding.editTextMyDisplayName.text.toString()
             val includeJunior = binding.checkBoxJunior.isChecked
