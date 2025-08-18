@@ -19,6 +19,10 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
+    // This function is called when the "Preview" button is clicked.
+    // It collects the input data from the UI elements and displays it in a Toast message.
+    // In a real application, you might want to pass this data to another activity or fragment
+    // for further processing or display.
     private fun onPreviewClicked() {
 
             val contactName = binding.editTextContactName.text.toString()
