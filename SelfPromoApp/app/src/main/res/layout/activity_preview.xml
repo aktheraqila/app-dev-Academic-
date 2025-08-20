@@ -6,13 +6,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="48dp">
+    android:padding="40dp">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardUseCompatPadding="true"
-        app:cardBackgroundColor="#D1CECE"
+        app:cardBackgroundColor="#EBE4E4"
         app:cardCornerRadius="6dp">
 
         <TextView
