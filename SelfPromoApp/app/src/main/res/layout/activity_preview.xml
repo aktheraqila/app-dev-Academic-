@@ -16,7 +16,10 @@
         app:cardCornerRadius="6dp">
 
         <TextView
+            android:fontFamily="sans-serif-light"
             android:id="@+id/text_view_message"
+            android:textColor="#212121"
+            android:layout_margin="12dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="18dp"
@@ -26,6 +29,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
+        style="@style/Widget.AppCompat.Button.Colored"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
