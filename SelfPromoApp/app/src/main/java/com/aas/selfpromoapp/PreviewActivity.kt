@@ -10,6 +10,7 @@ class PreviewActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        // Inflate the layout for this activity using View Binding
         binding = ActivityPreviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"
