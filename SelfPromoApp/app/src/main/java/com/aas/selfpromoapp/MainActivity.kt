@@ -35,7 +35,14 @@ class MainActivity : AppCompatActivity() {
             val startDate = binding.editTextStartDate.text.toString()
 
             val previewActivityIntent = Intent(this, PreviewActivity::class.java)
-        startActivity(previewActivityIntent)
+            previewActivityIntent.putExtra("Contact Name", contactName)
+            previewActivityIntent.putExtra("Contact Number", contactNumber)
+            previewActivityIntent.putExtra("My Display Name", displayName)
+            previewActivityIntent.putExtra("Include Junior", includeJunior)
+            previewActivityIntent.putExtra("Job Title", jobTitle)
+            previewActivityIntent.putExtra("Immediate Start", immediateStart)
+            previewActivityIntent.putExtra("Start Date", startDate)
+            startActivity(previewActivityIntent)
 
 
 //            val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $displayName, Include Junior: $includeJunior, Job Title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
