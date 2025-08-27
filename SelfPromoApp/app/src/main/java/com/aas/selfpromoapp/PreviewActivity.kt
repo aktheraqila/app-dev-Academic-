@@ -15,6 +15,7 @@ class PreviewActivity : AppCompatActivity() {
         setContentView(binding.root)
         binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"
 
+        // Retrieve the data passed from MainActivity via Intent extras
         val contactName: String? = intent.getStringExtra("Contact Name")
         val contactNumber: String? = intent.getStringExtra("Contact Number")
         val mydisplayName: String? = intent.getStringExtra("My Display")
