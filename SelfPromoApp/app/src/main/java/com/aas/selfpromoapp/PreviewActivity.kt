@@ -23,5 +23,6 @@ class PreviewActivity : AppCompatActivity() {
         val jobTitle: String? = intent.getStringExtra("Job Title")
         val immediateStart: Boolean = intent.getBooleanExtra("Immediate Start", false)
         val startDate: String? = intent.getStringExtra("Start Date")
+        val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $mydisplayName, Include Junior: $includeJunior, Job title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
  }
     }
