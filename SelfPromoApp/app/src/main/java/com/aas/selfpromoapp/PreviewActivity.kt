@@ -16,6 +16,7 @@ class PreviewActivity : AppCompatActivity() {
         binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"
 
 
+        // Retrieve the data passed from MainActivity via Intent extras
         val contactName: String? = intent.getStringExtra("Contact Name")
         val contactNumber: String? = intent.getStringExtra("Contact Number")
         val mydisplayName: String? = intent.getStringExtra("My Display")
@@ -24,6 +25,7 @@ class PreviewActivity : AppCompatActivity() {
         val immediateStart: Boolean = intent.getBooleanExtra("Immediate Start", false)
         val startDate: String? = intent.getStringExtra("Start Date")
         val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $mydisplayName, Include Junior: $includeJunior, Job title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
+
 
         binding.textViewMessage.text = testString
 
