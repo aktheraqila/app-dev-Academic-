@@ -26,7 +26,7 @@ class PreviewActivity : AppCompatActivity() {
         val startDate: String? = intent.getStringExtra("Start Date")
         val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $mydisplayName, Include Junior: $includeJunior, Job title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
 
-
+        // Display the retrieved data in the TextView
         binding.textViewMessage.text = testString
 
     }
