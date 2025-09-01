@@ -2,6 +2,7 @@ package com.aas.selfpromoapp
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.aas.selfpromoapp.databinding.ActivityMainBinding
@@ -18,12 +19,12 @@ class MainActivity : AppCompatActivity() {
         binding.buttonPreview.setOnClickListener {
             onPreviewClicked()
         }
+        val spinnerValues:Array<String> = arrayOf("our", "array", "values")
+        val spinnerAdapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, spinnerValues )
+        binding.spinnerJobTitle.adapter = spinnerAdapter
     }
 
-    // This function is called when the "Preview" button is clicked.
-    // It collects the input data from the UI elements and displays it in a Toast message.
-    // In a real application, you might want to pass this data to another activity or fragment
-    // for further processing or display.
+
     private fun onPreviewClicked() {
 
             val contactName = binding.editTextContactName.text.toString()
