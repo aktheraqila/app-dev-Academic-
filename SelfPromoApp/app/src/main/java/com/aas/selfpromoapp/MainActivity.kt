@@ -19,6 +19,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonPreview.setOnClickListener {
             onPreviewClicked()
         }
+
         val spinnerValues:Array<String> = arrayOf("our", "array", "values")
         val spinnerAdapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, spinnerValues )
         binding.spinnerJobTitle.adapter = spinnerAdapter
@@ -46,8 +47,6 @@ class MainActivity : AppCompatActivity() {
             startActivity(previewActivityIntent)
 
 
-//            val testString = "Contact Name: $contactName, Contact Number: $contactNumber, My Display Name: $displayName, Include Junior: $includeJunior, Job Title: $jobTitle, Immediate Start: $immediateStart, Start Date: $startDate"
-//            Toast.makeText(this, testString, Toast.LENGTH_LONG).show()
         }
 
     }
