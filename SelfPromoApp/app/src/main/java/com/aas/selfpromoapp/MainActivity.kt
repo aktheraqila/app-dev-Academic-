@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
             onPreviewClicked()
         }
 
+        // Set up the spinner with some example values
         val spinnerValues:Array<String> = arrayOf("our", "array", "values")
         val spinnerAdapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, spinnerValues )
         binding.spinnerJobTitle.adapter = spinnerAdapter
