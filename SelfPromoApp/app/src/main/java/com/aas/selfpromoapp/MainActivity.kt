@@ -3,7 +3,6 @@ package com.aas.selfpromoapp
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.aas.selfpromoapp.databinding.ActivityMainBinding
 
@@ -36,6 +35,17 @@ class MainActivity : AppCompatActivity() {
             val jobTitle = binding.spinnerJobTitle.selectedItem?.toString()
             val immediateStart = binding.checkBoxImmediateStart.isChecked
             val startDate = binding.editTextStartDate.text.toString()
+
+            val message = Message(
+                contactName = binding.editTextContactName.text.toString(),
+                binding.editTextContactNumber.text.toString(),
+                binding.editTextMyDisplayName.text.toString(),
+                binding.checkBoxJunior.isChecked,
+                binding.spinnerJobTitle.selectedItem?.toString(),
+                binding.checkBoxImmediateStart.isChecked,
+                binding.editTextStartDate.text.toString()
+
+            )
 
             val previewActivityIntent = Intent(this, PreviewActivity::class.java)
             previewActivityIntent.putExtra("Contact Name", contactName)
