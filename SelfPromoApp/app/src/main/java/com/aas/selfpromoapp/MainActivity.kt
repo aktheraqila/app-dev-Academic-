@@ -28,14 +28,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
-            val contactName = binding.editTextContactName.text.toString()
-            val contactNumber = binding.editTextContactNumber.text.toString()
-            val displayName = binding.editTextMyDisplayName.text.toString()
-            val includeJunior = binding.checkBoxJunior.isChecked
-            val jobTitle = binding.spinnerJobTitle.selectedItem?.toString()
-            val immediateStart = binding.checkBoxImmediateStart.isChecked
-            val startDate = binding.editTextStartDate.text.toString()
-
             val message = Message(
                 contactName = binding.editTextContactName.text.toString(),
                 binding.editTextContactNumber.text.toString(),
@@ -48,13 +40,13 @@ class MainActivity : AppCompatActivity() {
             )
 
             val previewActivityIntent = Intent(this, PreviewActivity::class.java)
-            previewActivityIntent.putExtra("Contact Name", contactName)
-            previewActivityIntent.putExtra("Contact Number", contactNumber)
-            previewActivityIntent.putExtra("My Display Name", displayName)
-            previewActivityIntent.putExtra("Include Junior", includeJunior)
-            previewActivityIntent.putExtra("Job Title", jobTitle)
-            previewActivityIntent.putExtra("Immediate Start", immediateStart)
-            previewActivityIntent.putExtra("Start Date", startDate)
+            previewActivityIntent.putExtra("Contact Name", message.contactName)
+            previewActivityIntent.putExtra("Contact Number", message.contactNumber)
+            previewActivityIntent.putExtra("My Display Name", message.displayName)
+            previewActivityIntent.putExtra("Include Junior", message.includeJunior)
+            previewActivityIntent.putExtra("Job Title", message.jobTitle)
+            previewActivityIntent.putExtra("Immediate Start", message.immediateStart)
+            previewActivityIntent.putExtra("Start Date", message.startDate)
             startActivity(previewActivityIntent)
 
 
