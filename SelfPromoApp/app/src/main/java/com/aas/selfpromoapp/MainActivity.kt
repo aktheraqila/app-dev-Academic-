@@ -28,6 +28,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
+        // Create a Message object from the input fields
             val message = Message(
                 contactName = binding.editTextContactName.text.toString(),
                 binding.editTextContactNumber.text.toString(),
