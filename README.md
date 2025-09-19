@@ -27,5 +27,3 @@ A basic calculator to perform simple arithmetic operations.
 #### 5. **The Hungry Developer**
 A fun multi-screen app with food items and descriptions.  
 **Practiced:** Activities, intents, arrays, ArrayAdapter, ScrollView, and CardView.
-
-#### 6. **Self Promo App**
