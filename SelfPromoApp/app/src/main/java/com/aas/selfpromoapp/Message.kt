@@ -11,3 +11,13 @@ data class Message (
     val immediateStart: Boolean,
     val startDate: String
 ) : Serializable
+
+fun getFullJobDescription(){
+    if (includeJunior){
+
+    }
+    else{
+
+    }
+
+}
