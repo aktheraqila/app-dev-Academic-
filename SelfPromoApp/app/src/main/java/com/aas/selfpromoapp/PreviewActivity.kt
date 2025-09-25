@@ -13,6 +13,11 @@ class PreviewActivity : AppCompatActivity() {
         binding = ActivityPreviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         val message: Message = intent.getStringExtra("Message") as Message
+        val messagePreviewText = """
+            Hi ${message.contactName},
+            
+            My name is ${message.displayName} and I am
+        """.trimIndent()
 
       //  binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"
 
