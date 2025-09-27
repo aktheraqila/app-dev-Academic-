@@ -10,13 +10,15 @@ data class Message (
     val jobTitle: String?,
     val immediateStart: Boolean,
     val startDate: String
-) : Serializable
+) : Serializable {
 
-fun getFullJobDescription(){
-    if (includeJunior){
-
-    }
-    else{
+    fun getFullJobDescription(): String {
+        if (includeJunior) {
+            "a Junior $jobTitle"
+        }
+        else{
+            "an $jobTitle"
+        }
 
     }
 
