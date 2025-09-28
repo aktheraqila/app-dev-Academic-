@@ -14,12 +14,11 @@ data class Message (
 
     fun getFullJobDescription(): String {
         if (includeJunior) {
-            "a Junior $jobTitle"
+           return "a Junior $jobTitle"
         }
         else{
-            "an $jobTitle"
+             return "an $jobTitle"
         }
-
     }
 
 }
