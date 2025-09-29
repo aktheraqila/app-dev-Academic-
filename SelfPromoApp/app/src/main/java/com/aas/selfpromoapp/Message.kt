@@ -13,12 +13,8 @@ data class Message (
 ) : Serializable {
 
     fun getFullJobDescription(): String {
-        if (includeJunior) {
-           return "a Junior $jobTitle"
-        }
-        else{
-             return "an $jobTitle"
-        }
+        if (includeJunior) return "a Junior $jobTitle" else return "an $jobTitle"
+
     }
 
 }
