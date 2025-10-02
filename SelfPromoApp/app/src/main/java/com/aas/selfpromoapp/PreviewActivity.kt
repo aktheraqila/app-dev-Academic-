@@ -16,7 +16,13 @@ class PreviewActivity : AppCompatActivity() {
         val messagePreviewText = """
             Hi ${message.contactName},
             
-            My name is ${message.displayName} and I am
+            My name is ${message.displayName} and I am ${message.getFullJobDescription()}.
+            
+            I have a portfolio of apps to demonstrate my technical skills that I can show on request.
+            
+            I am able to start a new position ${message.getAvailabitity()}.
+            
+            Thanks and best regards.
         """.trimIndent()
 
       //  binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"

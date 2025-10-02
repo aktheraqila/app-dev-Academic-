@@ -14,6 +14,8 @@ data class Message (
 
     fun getFullJobDescription() = if (includeJunior)  "a Junior $jobTitle" else  "an $jobTitle"
 
+    fun getAvailabitity() = if (immediateStart) "immediately" else "from $startDate"
+
 
 
 }
