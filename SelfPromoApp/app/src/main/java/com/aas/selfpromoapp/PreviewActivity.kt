@@ -25,7 +25,7 @@ class PreviewActivity : AppCompatActivity() {
             Thanks and best regards.
         """.trimIndent()
 
-      //  binding.textViewMessage.text = "We are manually setting some text in our Textview just so we can see something!"
 
+      binding.textViewMessage.text = messagePreviewText
     }
     }
