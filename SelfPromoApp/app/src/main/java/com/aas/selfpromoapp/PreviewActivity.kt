@@ -8,28 +8,37 @@ import com.aas.selfpromoapp.databinding.ActivityPreviewBinding
 class PreviewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPreviewBinding
 
+    var message: Message?= null
+    var messagePreviewText: String?= null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPreviewBinding.inflate(layoutInflater)
         setContentView(binding.root)
         displayFunction()
+        setupButton()
     }
 
     private fun displayFunction() {
-        val message: Message = intent.getStringExtra("Message") as Message
-        val messagePreviewText = """
-                Hi ${message.contactName},
+         message = intent.getStringExtra("Message") as Message
+         messagePreviewText = """
+                Hi ${message?.contactName},
                 
-                My name is ${message.displayName} and I am ${message.getFullJobDescription()}.
+                My name is ${message?.displayName} and I am ${message?.getFullJobDescription()}.
                 
                 I have a portfolio of apps to demonstrate my technical skills that I can show on request.
                 
-                I am able to start a new position ${message.getAvailabitity()}.
+                I am able to start a new position ${message?.getAvailabitity()}.
                 
                 Thanks and best regards.
             """.trimIndent()
 
 
         binding.textViewMessage.text = messagePreviewText
+    }
+    private fun setupButton(){
+
+
+
     }
 }
