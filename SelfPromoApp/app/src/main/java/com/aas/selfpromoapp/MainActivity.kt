@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
             onPreviewClicked()
         }
 
-        // Set up the spinner with some example values
         val spinnerValues:Array<String> = arrayOf("Android Developer", "Android engineer")
         val spinnerAdapter = ArrayAdapter(this,android.R.layout.simple_spinner_dropdown_item, spinnerValues )
         binding.spinnerJobTitle.adapter = spinnerAdapter
@@ -28,7 +27,6 @@ class MainActivity : AppCompatActivity() {
 
     private fun onPreviewClicked() {
 
-        // Create a Message object from the input fields
             val message = Message(
                 contactName = binding.editTextContactName.text.toString(),
                 binding.editTextContactNumber.text.toString(),
