@@ -8,8 +8,8 @@ import com.aas.selfpromoapp.databinding.ActivityPreviewBinding
 class PreviewActivity : AppCompatActivity() {
     private lateinit var binding: ActivityPreviewBinding
 
-    var message: Message?= null
-    var messagePreviewText: String?= null
+    lateinit var message: Message
+    lateinit var messagePreviewText: String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,13 +22,13 @@ class PreviewActivity : AppCompatActivity() {
     private fun displayFunction() {
          message = intent.getStringExtra("Message") as Message
          messagePreviewText = """
-                Hi ${message?.contactName},
+                Hi ${message.contactName},
                 
-                My name is ${message?.displayName} and I am ${message?.getFullJobDescription()}.
+                My name is ${message?.displayName} and I am ${message.getFullJobDescription()}.
                 
                 I have a portfolio of apps to demonstrate my technical skills that I can show on request.
                 
-                I am able to start a new position ${message?.getAvailabitity()}.
+                I am able to start a new position ${message.getAvailabitity()}.
                 
                 Thanks and best regards.
             """.trimIndent()
