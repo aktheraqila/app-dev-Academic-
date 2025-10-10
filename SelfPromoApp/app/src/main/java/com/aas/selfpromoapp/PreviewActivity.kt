@@ -38,6 +38,9 @@ class PreviewActivity : AppCompatActivity() {
     }
     private fun setupButton(){
 
+        binding.buttonSendMessage.setOnClickListener {
+            //Send Message Intent
+        }
 
 
     }
