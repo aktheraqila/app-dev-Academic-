@@ -1,5 +1,7 @@
 package com.aas.selfpromoapp
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.aas.selfpromoapp.databinding.ActivityPreviewBinding
@@ -39,7 +41,11 @@ class PreviewActivity : AppCompatActivity() {
     private fun setupButton(){
 
         binding.buttonSendMessage.setOnClickListener {
-            //Send Message Intent
+
+            val intent = Intent(Intent.ACTION_SENDTO).apply {
+                data = Uri.parse("smsto:") // This ensures only SMS apps respond
+                putExtra("sms body", message)
+            }
         }
 
 
