@@ -43,9 +43,11 @@ class PreviewActivity : AppCompatActivity() {
         binding.buttonSendMessage.setOnClickListener {
 
             val intent = Intent(Intent.ACTION_SENDTO).apply {
-                data = Uri.parse("smsto:") // This ensures only SMS apps respond
-                putExtra("sms body", message)
+                data = Uri.parse("smsto: ${message.contactNumber}") // This ensures only SMS apps respond
+                putExtra("sms body", messagePreviewText)
             }
+            startActivity(intent)
+
         }
 
 
