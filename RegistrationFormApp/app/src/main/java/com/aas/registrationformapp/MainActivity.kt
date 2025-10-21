@@ -35,6 +35,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun createAccount(){
+        val user = User(
+        binding.spinnerTitle.selectedItem as String,
+            binding.editTextFirstName.text.toString(),
+            binding.editTextLastName.text.toString(),
+            binding.editTextEmail.text.toString(),
+            binding.editTextPhone.text.toString(),
+            binding.editTextPassword.text.toString()
+        )
 
     }
 }
