@@ -1,6 +1,7 @@
 package com.aas.registrationformapp
 
 import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.widget.ArrayAdapter
 import androidx.activity.enableEdgeToEdge
@@ -43,6 +44,9 @@ class MainActivity : AppCompatActivity() {
             binding.editTextPhone.text.toString(),
             binding.editTextPassword.text.toString()
         )
+        val intent = Intent(this, SummaryActivity::class.java)
+        intent.putExtra("User", user)
+        startActivity(intent)
 
     }
 }

@@ -41,7 +41,7 @@ class SummaryActivity : AppCompatActivity() {
     private fun setupClickListener() {
         binding.textViewEmailAddress.setOnClickListener {
             val intent = Intent(Intent.ACTION_SENDTO)
-            intent.data = Uri.parse("mailto${user.email}")
+            intent.data = Uri.parse("mailto:${user.email}")
             startActivity(intent)
         }
 
