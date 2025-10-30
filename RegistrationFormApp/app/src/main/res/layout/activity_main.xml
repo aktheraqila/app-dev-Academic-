@@ -17,13 +17,15 @@
             android:layout_height="wrap_content"
             android:text="Register"
             android:padding="24dp"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif"
             android:textColor="@color/white"/>
 
         <Spinner
             android:id="@+id/spinner_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24"
+            android:layout_marginTop="24dp"
 
             tools:listitem="@android:layout/simple_list_item_1" />
 
