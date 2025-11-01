@@ -105,8 +105,7 @@
             android:layout_marginTop="8dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="Create Account"
-            android:backgroundTint="#A100FF"/>
+            android:text="Create Account"/>
 
     </LinearLayout>
 </ScrollView>
