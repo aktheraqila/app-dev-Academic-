@@ -102,7 +102,7 @@
         <com.google.android.material.button.MaterialButton
             android:id="@+id/button_create_account"
             android:layout_width="match_parent"
-            android:layout_marginTop="8dp"
+            android:layout_marginTop="36dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
             android:text="Create Account"/>

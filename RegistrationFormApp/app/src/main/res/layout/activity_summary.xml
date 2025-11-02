@@ -4,10 +4,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:padding="36dp"
     android:background="@drawable/gradient_background"
     tools:context=".SummaryActivity">
 
     <TextView
+        android:layout_marginTop="24dp"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="You account details" />
@@ -16,18 +21,27 @@
         android:id="@+id/text_view_user_full_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         tools:text="Mr. Fullname User" />
 
     <TextView
         android:id="@+id/text_view_email_address"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         tools:text="email@address.com" />
 
     <TextView
         android:id="@+id/text_view_phhone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
         android:text="01234 567890" />
 
 
