@@ -32,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textSize="16sp"
-        android:textColor="@color/white"
+        android:textColor="@color/blue_accent"
         tools:text="email@address.com" />
 
     <TextView
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textSize="16sp"
-        android:textColor="@color/white"
+        android:textColor="@color/blue_accent"
         android:text="01234 567890" />
 
 
