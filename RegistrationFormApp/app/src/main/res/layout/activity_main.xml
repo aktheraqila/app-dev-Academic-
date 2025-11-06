@@ -15,7 +15,7 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Register"
+            android:text="@string/activity_main_register_title"
             android:padding="24dp"
             android:textSize="24sp"
             android:fontFamily="sans-serif"
@@ -40,7 +40,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#41FFFFFF"
-                android:hint="First Name" />
+                android:hint="@string/activity_main_first_name_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -54,7 +54,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#40FFFFFF"
-                android:hint="Last Name" />
+                android:hint="@string/activity_main_last_name_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -69,7 +69,7 @@
                 android:layout_height="wrap_content"
                 android:background="#40FFFFFF"
                 android:inputType="textEmailAddress"
-                android:hint="Email" />
+                android:hint="@string/activity_main_email_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -84,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:background="#40FFFFFF"
                 android:inputType="phone"
-                android:hint="Phone No." />
+                android:hint="@string/activity_main_phone_no_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
@@ -100,7 +100,7 @@
                 android:layout_height="wrap_content"
                 android:background="#40FFFFFF"
                 android:inputType="textPassword"
-                android:hint="Password" />
+                android:hint="@string/activity_main_password_hint" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
@@ -109,7 +109,7 @@
             android:layout_marginTop="36dp"
             android:layout_height="wrap_content"
             android:textColor="@color/white"
-            android:text="Create Account"/>
+            android:text="@string/activity_main_create_account_button_text"/>
 
     </LinearLayout>
 </ScrollView>
