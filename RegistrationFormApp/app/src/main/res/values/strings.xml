@@ -7,4 +7,5 @@
     <string name="activity_main_phone_no_hint">Phone No.</string>
     <string name="activity_main_password_hint">Password</string>
     <string name="activity_main_create_account_button_text">Create Account</string>
+    <string name="activity_summary_heading">You account details</string>
 </resources>

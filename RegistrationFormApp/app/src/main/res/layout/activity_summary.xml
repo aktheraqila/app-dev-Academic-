@@ -15,7 +15,7 @@
         android:textColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="You account details" />
+        android:text="@string/activity_summary_heading" />
 
     <TextView
         android:id="@+id/text_view_user_full_name"
@@ -24,7 +24,7 @@
         android:layout_marginTop="48dp"
         android:textSize="16sp"
         android:textColor="@color/white"
-        tools:text="Mr. Fullname User" />
+        tools:text="Mr. Full Name User" />
 
     <TextView
         android:id="@+id/text_view_email_address"
@@ -36,13 +36,13 @@
         tools:text="email@address.com" />
 
     <TextView
-        android:id="@+id/text_view_phhone"
+        android:id="@+id/text_view_phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:textSize="16sp"
         android:textColor="@color/blue_accent"
-        android:text="01234 567890" />
+        tools:text="01234 567890" />
 
 
 </LinearLayout>
