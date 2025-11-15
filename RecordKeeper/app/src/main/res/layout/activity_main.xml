@@ -8,8 +8,11 @@
     tools:context=".MainActivity">
 
     <ImageView
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        android:id="@+id/image_view"
         app:layout_constraintTop_toTopOf="parent"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
