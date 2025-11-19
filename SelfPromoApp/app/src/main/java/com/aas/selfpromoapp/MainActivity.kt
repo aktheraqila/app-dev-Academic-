@@ -36,6 +36,8 @@ class MainActivity : AppCompatActivity() {
                 binding.checkBoxImmediateStart.isChecked,
                 binding.editTextStartDate.text.toString()
 
+                //binding.editTextStartDate.text.toString()
+
             )
 
             val previewActivityIntent = Intent(this, PreviewActivity::class.java)
