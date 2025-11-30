@@ -13,7 +13,7 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bottomNav
+        binding.bottomNav = findViewById(R.id.bottom_nav)
         binding.frameContent
     }
 }
