@@ -9,15 +9,14 @@ import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
-    private lateinit var bottomNav: BottomNavigationView
-    private lateinit var frameContent: FrameLayout
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bottomNav = findViewById(R.id.bottom_nav)
-        binding.frameContent  = findViewById(R.id.frame_content)
+        val  BottomNav = binding.bottomNav
+        val frameContenct = binding.frameContent
     }
 }
