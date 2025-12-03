@@ -16,7 +16,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val  BottomNav = binding.bottomNav
-        val frameContenct = binding.frameContent
+//        val  bottomNav: BottomNavigationView = binding.bottomNav
+//        val frame: FrameLayout = binding.frameContent
+
     }
 }
