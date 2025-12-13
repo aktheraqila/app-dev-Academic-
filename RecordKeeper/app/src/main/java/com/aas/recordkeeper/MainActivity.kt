@@ -19,5 +19,14 @@ class MainActivity : AppCompatActivity() {
             add(binding.frameContent.id, RunningFragment())
         }
 
+        binding.buttonCycling.setOnClickListener { onlyCyclcingClicked() }
+        binding.buttonRunning.setOnClickListener { onlyRunningClicked() }
+
     }
+}
+
+private fun MainActivity.onlyCyclcingClicked() {
+}
+
+private fun MainActivity.onlyRunningClicked() {
 }
