@@ -25,8 +25,10 @@ class MainActivity : AppCompatActivity() {
     }
 }
 
-private fun MainActivity.onlyCyclcingClicked() {
+private fun onlyCyclcingClicked() {
+
+
 }
 
-private fun MainActivity.onlyRunningClicked() {
+private fun onlyRunningClicked() {
 }
