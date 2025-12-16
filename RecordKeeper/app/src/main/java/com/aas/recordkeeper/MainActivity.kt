@@ -19,16 +19,22 @@ class MainActivity : AppCompatActivity() {
             add(binding.frameContent.id, RunningFragment())
         }
 
-        binding.buttonCycling.setOnClickListener { onlyCyclcingClicked() }
+        binding.buttonCycling.setOnClickListener { onlyCyclingClicked() }
         binding.buttonRunning.setOnClickListener { onlyRunningClicked() }
 
     }
+
+    private fun onlyCyclingClicked() {
+        supportFragmentManager.commit {
+            replace(binding.frameContent.id, CyclingFragment())
+        }
+
+    }
+
+    private fun onlyRunningClicked() {
+        supportFragmentManager.commit {
+            replace(binding.frameContent.id, RunningFragment())
+        }
+    }
 }
-
-private fun onlyCyclcingClicked() {
-
-
-}
-
-private fun onlyRunningClicked() {
-}
+    
