@@ -3,6 +3,7 @@ package com.aas.recordkeeper
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.aas.recordkeeper.databinding.ActivityMainBinding
 
 
@@ -16,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         supportFragmentManager.commit {
-            add(binding.frameContent.id, RunningFragment())
+            replace(binding.frameContent.id, RunningFragment())
         }
 
         binding.buttonCycling.setOnClickListener { onlyCyclingClicked() }
