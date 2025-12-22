@@ -17,6 +17,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
+        binding.buttonCycling.setOnClickListener()
+
     }
 
     private fun onlyCyclingClicked() {
