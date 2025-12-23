@@ -1,6 +1,7 @@
 package com.aas.recordkeeper
 
 import android.os.Bundle
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.commit
 import com.aas.recordkeeper.databinding.ActivityMainBinding
@@ -16,8 +17,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
-        binding.buttonCycling.setOnClickListener()
+        val theClickListener: View.OnClickListener= MyClickListener()
+        binding.buttonCycling.setOnClickListener(theClickListener)
 
     }
 
