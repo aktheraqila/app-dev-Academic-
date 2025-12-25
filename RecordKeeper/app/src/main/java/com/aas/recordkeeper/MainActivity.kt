@@ -22,8 +22,16 @@ class MainActivity : AppCompatActivity() , View.OnClickListener{
 
     }
 
-    override fun onClick(p0: View?) {
-        Toast.makeText(this, "I have made the Activity a click listener!", Toast.LENGTH_SHORT)
+    override fun onClick(v: View?) {
+        if(v?.id ==R.id.button_cycling){
+            Toast.makeText(this, "I have clicked on the Cycling button", Toast.LENGTH_LONG).show()
+
+        }
+        else if(v?.id ==R.id.button_running){
+            Toast.makeText(this, "I have clicked on the Running button", Toast.LENGTH_LONG).show()
+
+        }
+
     }
 
     private fun onlyCyclingClicked() {
