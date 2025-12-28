@@ -18,7 +18,11 @@ class MainActivity : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonCycling.setOnClickListener{ onlyCyclingClicked() }
+        binding.buttonCycling.setOnClickListener (object : View.OnClickListener{
+            override fun onClick(p0: View?) {
+
+            }
+        })
         binding.buttonRunning.setOnClickListener{ onlyRunningClicked() }
 
     }
