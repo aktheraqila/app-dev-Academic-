@@ -18,12 +18,8 @@ class MainActivity : AppCompatActivity(){
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.buttonCycling.setOnClickListener (object : View.OnClickListener{
-            override fun onClick(p0: View?) {
-
-            }
-        })
-        binding.buttonRunning.setOnClickListener{ onlyRunningClicked() }
+        binding.buttonCycling.setOnClickListener { binding.bottomNav }
+        binding.buttonRunning.setOnClickListener{ binding.bottomNav }
 
     }
 
