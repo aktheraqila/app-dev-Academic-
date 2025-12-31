@@ -10,7 +10,9 @@ import com.aas.recordkeeper.databinding.ActivityMainBinding
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemReselectedListener{
+private fun BottomNavigationView.setOnItemSelectedListener(listener: MainActivity) {}
+
+class MainActivity : AppCompatActivity() {
     private lateinit var binding: ActivityMainBinding
 
 
@@ -19,7 +21,10 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemR
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.bottomNav.setOnNavigationItemSelectedListener(this)
+        binding.bottomNav.setOnItemSelectedListener(this)
+
+        binding.buttonRunning.setOnClickListener { onlyRunningClicked() }
+        binding.buttonCycling.setOnClickListener { onlyCyclingClicked() }
 
     }
 
@@ -37,9 +42,8 @@ class MainActivity : AppCompatActivity(), BottomNavigationView.OnNavigationItemR
         }
     }
 
-    override fun onNavigationItemReselected(p0: MenuItem) {
-        TODO("Not yet implemented")
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        return true
     }
 }
 
-private fun BottomNavigationView.setOnNavigationItemSelectedListener(listener: MainActivity) {}
