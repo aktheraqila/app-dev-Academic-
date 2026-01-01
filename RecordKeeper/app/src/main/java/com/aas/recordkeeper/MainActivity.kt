@@ -23,11 +23,7 @@ class MainActivity : AppCompatActivity() {
 
         binding.bottomNav.setOnItemSelectedListener(this)
 
-        binding.buttonRunning.setOnClickListener { onlyRunningClicked() }
-        binding.buttonCycling.setOnClickListener { onlyCyclingClicked() }
-
     }
-
 
     private fun onlyCyclingClicked() {
         supportFragmentManager.commit {
@@ -43,7 +39,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
-        return true
+        if(item.itemId == R.id.nav_cycling) {
+
+        } else if (item.itemId == R.id.nav_running){
+
+        } else {
+
+        }
     }
 }
 
