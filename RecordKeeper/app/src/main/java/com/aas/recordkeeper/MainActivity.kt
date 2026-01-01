@@ -40,10 +40,15 @@ class MainActivity : AppCompatActivity() {
 
     override fun onContextItemSelected(item: MenuItem): Boolean {
         if(item.itemId == R.id.nav_cycling) {
+            onlyCyclingClicked()
+            return true
 
         } else if (item.itemId == R.id.nav_running){
-
+            onlyRunningClicked()
+            return true
         } else {
+            return false
+
 
         }
     }
