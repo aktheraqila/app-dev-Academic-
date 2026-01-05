@@ -24,6 +24,7 @@
 
             <View
                 android:layout_width="match_parent"
+                android:background="@drawable/gradient_overlay"
                 android:layout_height="match_parent"/>
 
             <TextView
@@ -31,7 +32,8 @@
                 android:layout_height="wrap_content"
                 android:text="Running"
                 android:textSize="24dp"
-                android:layout_marginBottom="16dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="2dp"
                 android:layout_gravity="bottom"
                 android:fontFamily="sans-serif-light"
                 android:textColor="@color/white"
