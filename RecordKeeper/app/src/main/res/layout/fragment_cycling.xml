@@ -17,6 +17,7 @@
             android:layout_height="200dp">
 
             <ImageView
+                android:contentDescription="@string/cycling_image_description"
                 android:src="@drawable/bike_heading"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
