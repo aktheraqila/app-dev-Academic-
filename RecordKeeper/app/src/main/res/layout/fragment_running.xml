@@ -17,6 +17,7 @@
             android:layout_height="200dp">
 
             <ImageView
+                android:contentDescription="@string/running_image_description"
                 android:src="@drawable/running_heading"
                 android:scaleType="centerCrop"
                 android:layout_width="match_parent"
