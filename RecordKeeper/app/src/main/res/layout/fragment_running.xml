@@ -63,6 +63,7 @@
                     android:textSize="20sp"
                     android:fontFamily="sans-serif"
                     android:textColor="#6A1B9A"
+                    android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
