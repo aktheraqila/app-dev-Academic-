@@ -64,7 +64,7 @@
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:fontFamily="sans-serif"
-                    android:textColor="#6A1B9A"
+                    android:textColor="?attr/colorPrimary"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
