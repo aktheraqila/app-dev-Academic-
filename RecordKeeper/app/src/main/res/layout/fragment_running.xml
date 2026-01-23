@@ -75,7 +75,8 @@
                     app:layout_constraintTop_toTopOf="parent"
                     tools:text="22:04"
                     android:fontFamily="sans-serif-light"
-                    android:textSize="20sp"
+                    android:textSize="18sp"
+                    android:padding="8dp"
                     android:textColor="@color/dark_grey"/>
 
 
