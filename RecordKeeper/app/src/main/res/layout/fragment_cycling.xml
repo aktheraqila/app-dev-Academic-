@@ -62,7 +62,7 @@
                     android:id="@+id/text_view_10k_value"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="10km"
+                    android:text="@string/_10km"
                     android:textStyle="bold"
                     android:textSize="20sp"
                     android:fontFamily="sans-serif"

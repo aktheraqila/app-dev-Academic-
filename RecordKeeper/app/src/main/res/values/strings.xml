@@ -4,4 +4,6 @@
     <string name="cycling">Cycling</string>
     <string name="cycling_image_description">Cycling Image</string>
     <string name="running_image_description">running__image_description</string>
+    <string name="_10km">10km</string>
+    <string name="_5km">5km</string>
 </resources>
