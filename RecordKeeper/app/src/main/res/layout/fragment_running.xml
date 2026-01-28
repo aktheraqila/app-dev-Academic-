@@ -75,7 +75,7 @@
                     android:layout_height="wrap_content"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:text="22:04"
+                    tools:text="@string/running_22_04"
                     android:fontFamily="sans-serif-light"
                     android:textSize="18sp"
                     android:padding="8dp"
