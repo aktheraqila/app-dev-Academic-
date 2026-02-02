@@ -81,6 +81,16 @@
                     android:padding="8dp"
                     android:textColor="@color/dark_grey"/>
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/_29_01_2025"
+                    android:layout_marginTop="16dp"
+                    android:fontFamily="sans-serif-light"
+                    app:layout_constraintTop_toBottomOf="@+id/text_view_10k_value"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
