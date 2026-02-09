@@ -11,4 +11,6 @@
     <string name="_29_01_2025">29/01/2025</string>
     <string name="half_marathon_heading">Half Marathon</string>
     <string name="marathon_heading">Marathon</string>
+    <string name="half_marathon">Half Marathon</string>
+    <string name="marathon">Marathon</string>
 </resources>
