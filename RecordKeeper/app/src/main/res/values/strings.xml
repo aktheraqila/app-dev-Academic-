@@ -13,4 +13,7 @@
     <string name="marathon_heading">Marathon</string>
     <string name="half_marathon">Half Marathon</string>
     <string name="marathon">Marathon</string>
+    <string name="cycling_image">Cycling Image</string>
+    <string name="longest_ride">Longest Ride</string>
+    <string name="biggest_climb">Biggest Climb</string>
 </resources>
