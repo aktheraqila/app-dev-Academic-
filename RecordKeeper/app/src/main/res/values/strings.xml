@@ -4,11 +4,9 @@
     <string name="cycling">Cycling</string>
     <string name="cycling_image_description">Cycling Image</string>
     <string name="running_image_description">running__image_description</string>
-    <string name="_10km">10km</string>
-    <string name="_5km">5km</string>
-    <string name="_22_04">22:04</string>
+    <string name="ten_km_heading">10km</string>
+    <string name="five_km_heading">5km</string>
     <string name="running_22_04">22:04</string>
-    <string name="_29_01_2025">29/01/2025</string>
     <string name="half_marathon_heading">Half Marathon</string>
     <string name="marathon_heading">Marathon</string>
     <string name="half_marathon">Half Marathon</string>
