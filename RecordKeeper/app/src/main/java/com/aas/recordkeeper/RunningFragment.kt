@@ -16,6 +16,7 @@ class RunningFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
+        binding = FragmentRunningBinding.inflate(inflater, container,false)
        return inflater.inflate(R.layout.fragment_running, container, false)
 
     }
