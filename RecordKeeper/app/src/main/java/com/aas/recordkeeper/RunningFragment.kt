@@ -17,8 +17,8 @@ class RunningFragment : Fragment() {
     ): View? {
 
         binding = FragmentRunningBinding.inflate(inflater, container,false)
-       return inflater.inflate(R.layout.fragment_running, container, false)
 
+        return binding.root
     }
 
 }
