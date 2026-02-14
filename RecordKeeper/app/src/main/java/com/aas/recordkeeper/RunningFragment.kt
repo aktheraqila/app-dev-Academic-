@@ -23,10 +23,14 @@ class RunningFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-
+        setUpClickListeners()
     }
 
+    private fun setUpClickListeners() {
+        binding.container5km.setOnClickListener {
+            View.OnClickListener { TODO("Not yet implemented") }
 
+        } }
+    }
 
 }
