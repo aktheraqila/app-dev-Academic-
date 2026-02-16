@@ -27,11 +27,15 @@ class RunningFragment : Fragment() {
     }
 
     private fun setUpClickListeners() {
-        binding.container5km.setOnClickListener {  }
+        binding.container5km.setOnClickListener { launchRunningRecordScreen() }
         binding.container10km.setOnClickListener {  }
         binding.containerHalfMarathonTime.setOnClickListener {  }
         binding.containerMarathon.setOnClickListener {  }
 
     }
 
+}
+
+private fun RunningFragment.launchRunningRecordScreen() {
+    TODO("Not yet implemented")
 }
