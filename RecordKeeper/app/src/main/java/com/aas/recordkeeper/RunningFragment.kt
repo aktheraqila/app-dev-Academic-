@@ -1,5 +1,6 @@
 package com.aas.recordkeeper
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -37,5 +38,7 @@ class RunningFragment : Fragment() {
 }
 
 private fun RunningFragment.launchRunningRecordScreen() {
-    TODO("Not yet implemented")
+
+
+    val intent = Intent(context, EditRunningRecordActivity::class.java)
 }
