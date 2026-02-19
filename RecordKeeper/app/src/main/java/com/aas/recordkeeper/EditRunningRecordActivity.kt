@@ -14,7 +14,8 @@ class EditRunningRecordActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityEditRunningRecordBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_edit_running_record)
+        setContentView(binding.root)
 
+        title = "My new toolbar title"
     }
 }
