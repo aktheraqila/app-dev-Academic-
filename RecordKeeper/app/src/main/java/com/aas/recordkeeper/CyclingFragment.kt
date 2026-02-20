@@ -1,5 +1,6 @@
 package com.aas.recordkeeper
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -33,4 +34,5 @@ class CyclingFragment: Fragment() {
 
 private fun CyclingFragment.launchCyclingRecordScreen(distance: String) {
 
+    val intent = Intent(context, Edit)
 }
