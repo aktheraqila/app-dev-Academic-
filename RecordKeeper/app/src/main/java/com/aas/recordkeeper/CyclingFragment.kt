@@ -25,6 +25,12 @@ class CyclingFragment: Fragment() {
     }
 
     private fun setUpClickListeners() {
-
+        binding.containerLongestRide.setOnClickListener{ launchCyclingRecordScreen("Longest Ride") }
+        binding.containerBiggestClimb.setOnClickListener{ launchCyclingRecordScreen("Biggest Climb") }
+        binding.containerBestAverageSpeedTime.setOnClickListener{ launchCyclingRecordScreen("Best Average Speed Time") }
     }
+}
+
+private fun CyclingFragment.launchCyclingRecordScreen(distance: String) {
+
 }
