@@ -16,4 +16,5 @@
     <string name="biggest_climb">Biggest Climb</string>
     <string name="best_average_speed">Best Average Speed</string>
     <string name="this_will_be_where_we_will_edit_our_running_records">This will be where we will edit our running records</string>
+    <string name="this_will_be_where_we_will_edit_our_cycling_records">This will be where we will edit our cycling records</string>
 </resources>
