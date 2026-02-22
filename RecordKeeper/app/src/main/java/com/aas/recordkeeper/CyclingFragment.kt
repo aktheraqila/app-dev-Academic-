@@ -32,8 +32,8 @@ class CyclingFragment: Fragment() {
     }
 }
 
-private fun CyclingFragment.launchCyclingRecordScreen(distance: String) {
+private fun CyclingFragment.launchCyclingRecordScreen(record: String) {
 
     val intent = Intent(context, EditCyclingRecordActivity:: class.java)
-    intent.putExtra("Distance", distance)
+    intent.putExtra("Record", record)
 }
