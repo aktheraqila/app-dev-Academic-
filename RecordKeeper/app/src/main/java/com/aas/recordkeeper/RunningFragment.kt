@@ -41,4 +41,5 @@ private fun RunningFragment.launchRunningRecordScreen(distance: String) {
 
     val intent = Intent(context, EditRunningRecordActivity::class.java)
     intent.putExtra("Distance", distance)
+    startActivity(intent)
 }

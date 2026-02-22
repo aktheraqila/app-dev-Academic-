@@ -36,4 +36,5 @@ private fun CyclingFragment.launchCyclingRecordScreen(record: String) {
 
     val intent = Intent(context, EditCyclingRecordActivity:: class.java)
     intent.putExtra("Record", record)
+    startActivity(intent)
 }
