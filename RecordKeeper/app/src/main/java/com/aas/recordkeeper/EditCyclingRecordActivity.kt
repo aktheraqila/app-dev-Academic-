@@ -11,8 +11,8 @@ class EditCyclingRecordActivity : AppCompatActivity() {
         binding = ActivityEditCyclingRecordBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val distance = intent.getStringExtra("Distance")
-        title = "$distance Record"
+        val record = intent.getStringExtra("Record")
+        title = "$record Record"
 
     }
 }
