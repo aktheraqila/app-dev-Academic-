@@ -86,7 +86,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/_29_01_2025"
+                    android:text="29/01/2025"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/text_view_longest_ride_value" />
 
@@ -135,7 +135,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/_29_01_2025"
+                    android:text="29/01/20255"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/text_view_biggest_climb_value" />
 
@@ -184,7 +184,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:fontFamily="sans-serif-light"
-                    android:text="@string/_29_01_2025"
+                    android:text="29/01/2025"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/text_view_best_average_speed_value" />
 
